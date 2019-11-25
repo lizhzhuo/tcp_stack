@@ -1,15 +1,15 @@
-## 说明
-```
-TCP数据传输实验
-```
-
 ## 注意
 ```
-本实验仅实现在【无丢包网络下】的【无拥塞控制的】
+实现在【无丢包网络下】和【无拥塞控制的】环境下的
 简易TCP协议栈
 ```
 
-实验环境：Mininet
+
+## 实验环境
+```
+Mininet
+```
+
 
 ## 编译代码
 Linux系统打开终端，执行：
@@ -47,9 +47,6 @@ export LD_LIBRARY_PATH=.;
 
 
 ## 目录结构
-
-带<b>*</b>号的表示需要完善的文件。
-
 ```
 tcp_stack
 ├── client.py           # 客户端程序实现（python脚本），用于测试
@@ -63,9 +60,9 @@ tcp_stack
 ├── server.py           # 服务器程序实现（python脚本），用于测试
 ├── tcp_apps.c          # 基于tcp-stack的服务器和客户端程序
 ├── tcp.c               # TCP协议相关处理函数
-├──*tcp_in.c            # TCP接收相关函数
+├── tcp_in.c            # TCP接收相关函数
 ├── tcp_out.c           # TCP发送相关函数
-├──*tcp_sock.c          # tcp_sock操作相关函数
+├── tcp_sock.c          # tcp_sock操作相关函数
 ├── tcp_stack-reference # TCP协议栈参考实现
 ├── tcp_timer.c         # TCP定时器
 └── topo                # Mininet拓扑文件夹
