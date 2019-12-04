@@ -28,7 +28,7 @@ sudo python2 topo/tcp_topo.py
 mininet> xterm h1 h2
 ```
 
-### 禁用tcp协议栈，并设置lib路径,需要分别在h1 h2的xterm中运行
+### 禁用tcp协议栈，并设置lib路径，需要分别在h1 h2的xterm中运行
 
 ```
 ./scripts/disable_arp.sh
