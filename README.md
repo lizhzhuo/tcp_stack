@@ -22,10 +22,8 @@ make
 ## 启用
 Linux系统打开终端，执行：
 ```
-启动mininet
-sudo python2 topo/tcp_topo.py
-打开xterm
-mininet> xterm h1 h2
+sudo python2 topo/tcp_topo.py #启动mininet
+mininet> xterm h1 h2 #打开xterm
 ```
 
 ### 禁用tcp协议栈，并设置lib路径，需要分别在h1 h2的xterm中运行
